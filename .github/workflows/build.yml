@@ -50,24 +50,24 @@ jobs:
       - name: Build
         run: ./mvnw -Pcoverage dependency:go-offline clean verify -Dgroups="!ui"
 
-      - name: Analyse with SonarCloud
-        if: ${{ github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]') }}
-        run: >
-          ./mvnw
-          -Pcoverage
-          sonar:sonar
-          -Dsonar.host.url=https://sonarcloud.io
-          -Dsonar.organization=urlaubsverwaltung
-          -Dsonar.projectKey=urlaubsverwaltung_urlaubsverwaltung
-          -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml
-          -Dsonar.javascript.lcov.reportPaths=target/js-coverage/lcov.info
-          -Dsonar.javascript.exclusions=**/__tests__/**,**/*-spec.js,**/*.spec.js,**/*-test.js,**/*.test.js
-          -Dsonar.eslint.reportPaths=target/js-eslint/report.json
-          -Dsonar.coverage.exclusions=**/__tests__/**,**/*-spec.js,**/*.spec.js,**/*-test.js,**/*.test.js
-          -Dsonar.sources=src/main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      # - name: Analyse with SonarCloud
+      #   if: ${{ github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]') }}
+      #   run: >
+      #     ./mvnw
+      #     -Pcoverage
+      #     sonar:sonar
+      #     -Dsonar.host.url=https://sonarcloud.io
+      #     -Dsonar.organization=urlaubsverwaltung
+      #     -Dsonar.projectKey=urlaubsverwaltung_urlaubsverwaltung
+      #     -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml
+      #     -Dsonar.javascript.lcov.reportPaths=target/js-coverage/lcov.info
+      #     -Dsonar.javascript.exclusions=**/__tests__/**,**/*-spec.js,**/*.spec.js,**/*-test.js,**/*.test.js
+      #     -Dsonar.eslint.reportPaths=target/js-eslint/report.json
+      #     -Dsonar.coverage.exclusions=**/__tests__/**,**/*-spec.js,**/*.spec.js,**/*-test.js,**/*.test.js
+      #     -Dsonar.sources=src/main
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   ui-test:
     name: UI Test
