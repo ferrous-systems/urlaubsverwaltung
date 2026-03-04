@@ -71,6 +71,7 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_MELILLA
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_MURCIA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_NAVARRA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_VALENCIA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWEDEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_AARGAU;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_APPENZELL_AUSSERRHODEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_APPENZELL_INNERRHODEN;
@@ -97,7 +98,6 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_W
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_WALLIS;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_ZUERICH;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_ZUG;
-import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWEDEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.UNITED_KINGDOM_ALDERNEY;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.UNITED_KINGDOM_ENGLAND;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.UNITED_KINGDOM_GUERNSEY;
