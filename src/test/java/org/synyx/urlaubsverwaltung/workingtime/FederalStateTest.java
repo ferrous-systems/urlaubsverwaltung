@@ -372,7 +372,7 @@ class FederalStateTest {
         final List<FederalState> ltFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "lt".equals(federalState.getCountry())).toList();
         final List<FederalState> beFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "be".equals(federalState.getCountry())).toList();
         final List<FederalState> plFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "pl".equals(federalState.getCountry())).toList();
-        final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "es".equals(federalState.getCountry())).toList();
+        final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "se".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
         assertThat(federalStatesTypesByCountry).hasSize(15)
