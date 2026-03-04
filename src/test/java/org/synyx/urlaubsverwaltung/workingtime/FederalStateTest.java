@@ -22,6 +22,19 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.AUSTRIA_TIROL
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.AUSTRIA_VORARLBERG;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.AUSTRIA_WIEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.BELGIUM;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_ALBERTA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_BRITISHCOLUMBIA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_MANITOBA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_NEWBRUNSWICK;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_NEWFOUNDLANDANDLABRADOR;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_NORTHWESTTERRITORIES;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_NOVASCOTIA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_NUNAVUT;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_ONTARIO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_PRINCEEDWARDISLAND;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_QUEBEC;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_SASKATCHEWAN;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_YUKON;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CROATIA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.GERMANY_BADEN_WUERTTEMBERG;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.GERMANY_BAYERN;
@@ -151,6 +164,18 @@ class FederalStateTest {
             Arguments.of(AUSTRIA_TIROL, "7", null),
             Arguments.of(AUSTRIA_VORARLBERG, "8", null),
             Arguments.of(AUSTRIA_WIEN, "9", null),
+
+            Arguments.of(CANADA_ONTARIO, "on", null),
+            Arguments.of(CANADA_YUKON, "yt", null),
+            Arguments.of(CANADA_QUEBEC, "qc", null),
+            Arguments.of(CANADA_NOVASCOTIA, "ns", null),
+            Arguments.of(CANADA_NEWBRUNSWICK, "nb", null),
+            Arguments.of(CANADA_NORTHWESTTERRITORIES, "nt", null),
+            Arguments.of(CANADA_BRITISHCOLUMBIA, "bc", null),
+            Arguments.of(CANADA_PRINCEEDWARDISLAND, "pe", null),
+            Arguments.of(CANADA_SASKATCHEWAN, "sk", null),
+            Arguments.of(CANADA_ALBERTA, "ab", null),
+            Arguments.of(CANADA_NEWFOUNDLANDANDLABRADOR, "nl", null),
 
             Arguments.of(SWITZERLAND_AARGAU, "ag", null),
             Arguments.of(SWITZERLAND_APPENZELL_INNERRHODEN, "ai", null),
@@ -286,6 +311,18 @@ class FederalStateTest {
             Arguments.of(AUSTRIA_VORARLBERG, "at"),
             Arguments.of(AUSTRIA_WIEN, "at"),
 
+            Arguments.of(CANADA_ONTARIO, "ca"),
+            Arguments.of(CANADA_YUKON, "ca"),
+            Arguments.of(CANADA_QUEBEC, "ca"),
+            Arguments.of(CANADA_NOVASCOTIA, "ca"),
+            Arguments.of(CANADA_NEWBRUNSWICK, "ca"),
+            Arguments.of(CANADA_NORTHWESTTERRITORIES, "ca"),
+            Arguments.of(CANADA_BRITISHCOLUMBIA, "ca"),
+            Arguments.of(CANADA_PRINCEEDWARDISLAND, "ca"),
+            Arguments.of(CANADA_SASKATCHEWAN, "ca"),
+            Arguments.of(CANADA_ALBERTA, "ca"),
+            Arguments.of(CANADA_NEWFOUNDLANDANDLABRADOR, "ca"),
+
             Arguments.of(SWITZERLAND_AARGAU, "ch"),
             Arguments.of(SWITZERLAND_APPENZELL_INNERRHODEN, "ch"),
             Arguments.of(SWITZERLAND_APPENZELL_AUSSERRHODEN, "ch"),
@@ -361,6 +398,7 @@ class FederalStateTest {
         final Map<String, List<FederalState>> federalStatesTypesByCountry = FederalState.federalStatesTypesByCountry();
         final List<FederalState> deFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "de".equals(federalState.getCountry())).toList();
         final List<FederalState> atFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "at".equals(federalState.getCountry())).toList();
+        final List<FederalState> caFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "ca".equals(federalState.getCountry())).toList();
         final List<FederalState> chFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "ch".equals(federalState.getCountry())).toList();
         final List<FederalState> ukFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "gb".equals(federalState.getCountry())).toList();
         final List<FederalState> grFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "gr".equals(federalState.getCountry())).toList();
@@ -375,9 +413,10 @@ class FederalStateTest {
         final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "se".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
-        assertThat(federalStatesTypesByCountry).hasSize(15)
+        assertThat(federalStatesTypesByCountry).hasSize(16)
             .contains(entry("de", deFederalStates))
             .contains(entry("at", atFederalStates))
+            .contains(entry("ca", caFederalStates))
             .contains(entry("ch", chFederalStates))
             .contains(entry("gb", ukFederalStates))
             .contains(entry("gr", grFederalStates))
