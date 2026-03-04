@@ -375,7 +375,7 @@ class FederalStateTest {
         final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "es".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
-        assertThat(federalStatesTypesByCountry).hasSize(14)
+        assertThat(federalStatesTypesByCountry).hasSize(15)
             .contains(entry("de", deFederalStates))
             .contains(entry("at", atFederalStates))
             .contains(entry("ch", chFederalStates))
