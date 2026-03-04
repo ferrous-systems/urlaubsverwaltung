@@ -13,7 +13,7 @@ class PublicHolidayConfigurationTest {
     void ensureThatHolidaysManagerMapContainsAllKeys() {
         final Map<String, HolidayManager> holidayManagers = new PublicHolidayConfiguration().holidayManagerMap();
         assertThat(holidayManagers)
-                .hasSize(16)
-                .containsKeys("de", "at", "ca", "ch", "gb", "gr", "mt", "it", "hr", "es", "nl", "lt", "be", "pl", "se", "us");
+                .hasSize(17)
+                .containsKeys("de", "at", "ca", "co", "ch", "gb", "gr", "mt", "it", "hr", "es", "nl", "lt", "be", "pl", "se", "us");
     }
 }
