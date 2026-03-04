@@ -97,6 +97,7 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_W
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_WALLIS;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_ZUERICH;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_ZUG;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWEDEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.UNITED_KINGDOM_ALDERNEY;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.UNITED_KINGDOM_ENGLAND;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.UNITED_KINGDOM_GUERNSEY;
