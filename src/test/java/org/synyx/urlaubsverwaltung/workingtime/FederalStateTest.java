@@ -65,6 +65,45 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.MALTA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.NETHERLANDS;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.NONE;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.POLAND;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_BELMONTE;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_CASTELOBRANCO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_COVILHA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_FUNDAO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_IDANHAANOVA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_OLEIROS;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_PENAMACOR;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_PROVENCAANOVA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_SERTA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_VILADEREI;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_VILAVELHADERODAO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_ALENQUER;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_AMADOR;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_ARRUDADOSVINHOS;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_AZAMBUJA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_CASCAIS;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_LISBOA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_LOURES;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_LOURINHA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_MAFRA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_ODIVELAS;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_OEIRAS;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_SINTRA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_SOBRALDEMONTEAGRACO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_TORRESVEDRAS;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_VILAFRANCADEXIRA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_ALCACERDOSAL;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_ALCOCHETE;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_ALMADA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_BARREIRO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_GRANDOLA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_MOITA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_MONTIJO;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_PALMELA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_SANTIAGODOCACEM;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_SEIXAL;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_SESIMBRA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_SETUBAL;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_SETUBAL_SINES;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_ANDALUCIA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_ARAGON;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_ASTURIAS;
@@ -177,6 +216,45 @@ class FederalStateTest {
             Arguments.of(CANADA_SASKATCHEWAN, "sk", null),
             Arguments.of(CANADA_ALBERTA, "ab", null),
             Arguments.of(CANADA_NEWFOUNDLANDANDLABRADOR, "nl", null),
+
+            Arguments.of(PORTUGAL_CASTELOBRANCO_COVILHA, "05", "CVL"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_CASTELOBRANCO, "05", "CTB"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_FUNDAO, "05", "FND"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_IDANHAANOVA, "05", "IDN"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_OLEIROS, "05", "OLR"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_PENAMACOR, "05", "PNC"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_PROVENCAANOVA, "05", "PNV"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_SERTA, "05", "SRT"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_VILADEREI, "05", "VLR"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_VILAVELHADERODAO, "05", "VVR"),
+            Arguments.of(PORTUGAL_LISSABON_ALENQUER, "11", "ALQ"),
+            Arguments.of(PORTUGAL_LISSABON_AMADOR, "11", "AMD"),
+            Arguments.of(PORTUGAL_LISSABON_ARRUDADOSVINHOS, "11", "ARV"),
+            Arguments.of(PORTUGAL_LISSABON_AZAMBUJA, "11", "AZB"),
+            Arguments.of(PORTUGAL_LISSABON_CASCAIS, "11", "CSC"),
+            Arguments.of(PORTUGAL_LISSABON_LISBOA, "11", "LSB"),
+            Arguments.of(PORTUGAL_LISSABON_LOURES, "11", "LRS"),
+            Arguments.of(PORTUGAL_LISSABON_LOURINHA, "11", "LRH"),
+            Arguments.of(PORTUGAL_LISSABON_MAFRA, "11", "MFR"),
+            Arguments.of(PORTUGAL_LISSABON_ODIVELAS, "11", "ODV"),
+            Arguments.of(PORTUGAL_LISSABON_OEIRAS, "11", "OER"),
+            Arguments.of(PORTUGAL_LISSABON_SINTRA, "11", "SNT"),
+            Arguments.of(PORTUGAL_LISSABON_SOBRALDEMONTEAGRACO, "11", "SMA"),
+            Arguments.of(PORTUGAL_LISSABON_TORRESVEDRAS, "11", "TVD"),
+            Arguments.of(PORTUGAL_LISSABON_VILAFRANCADEXIRA, "11", "VFX"),
+            Arguments.of(PORTUGAL_SETUBAL_ALCACERDOSAL, "15", "ASL"),
+            Arguments.of(PORTUGAL_SETUBAL_ALCOCHETE, "15", "ACH"),
+            Arguments.of(PORTUGAL_SETUBAL_ALMADA, "15", "ALM"),
+            Arguments.of(PORTUGAL_SETUBAL_BARREIRO, "15", "BRR"),
+            Arguments.of(PORTUGAL_SETUBAL_GRANDOLA, "15", "GDL"),
+            Arguments.of(PORTUGAL_SETUBAL_MOITA, "15", "MTA"),
+            Arguments.of(PORTUGAL_SETUBAL_MONTIJO, "15", "MTJ"),
+            Arguments.of(PORTUGAL_SETUBAL_PALMELA, "15", "PLM"),
+            Arguments.of(PORTUGAL_SETUBAL_SANTIAGODOCACEM, "15", "STC"),
+            Arguments.of(PORTUGAL_SETUBAL_SEIXAL, "15", "SXL"),
+            Arguments.of(PORTUGAL_SETUBAL_SESIMBRA, "15", "SSB"),
+            Arguments.of(PORTUGAL_SETUBAL_SETUBAL, "15", "STB"),
+            Arguments.of(PORTUGAL_SETUBAL_SINES, "15", "SNS"),
 
             Arguments.of(SWITZERLAND_AARGAU, "ag", null),
             Arguments.of(SWITZERLAND_APPENZELL_INNERRHODEN, "ai", null),
@@ -324,6 +402,45 @@ class FederalStateTest {
             Arguments.of(CANADA_ALBERTA, "ca"),
             Arguments.of(CANADA_NEWFOUNDLANDANDLABRADOR, "ca"),
 
+            Arguments.of(PORTUGAL_CASTELOBRANCO_COVILHA, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_CASTELOBRANCO, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_FUNDAO, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_IDANHAANOVA, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_OLEIROS, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_PENAMACOR, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_PROVENCAANOVA, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_SERTA, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_VILADEREI, "pt"),
+            Arguments.of(PORTUGAL_CASTELOBRANCO_VILAVELHADERODAO, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_ALENQUER, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_AMADOR, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_ARRUDADOSVINHOS, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_AZAMBUJA, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_CASCAIS, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_LISBOA, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_LOURES, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_LOURINHA, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_MAFRA, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_ODIVELAS, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_OEIRAS, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_SINTRA, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_SOBRALDEMONTEAGRACO, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_TORRESVEDRAS, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_VILAFRANCADEXIRA, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_ALCACERDOSAL, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_ALCOCHETE, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_ALMADA, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_BARREIRO, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_GRANDOLA, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_MOITA, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_MONTIJO, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_PALMELA, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_SANTIAGODOCACEM, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_SEIXAL, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_SESIMBRA, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_SETUBAL, "pt"),
+            Arguments.of(PORTUGAL_SETUBAL_SINES, "pt"),
+
             Arguments.of(SWITZERLAND_AARGAU, "ch"),
             Arguments.of(SWITZERLAND_APPENZELL_INNERRHODEN, "ch"),
             Arguments.of(SWITZERLAND_APPENZELL_AUSSERRHODEN, "ch"),
@@ -412,10 +529,11 @@ class FederalStateTest {
         final List<FederalState> ltFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "lt".equals(federalState.getCountry())).toList();
         final List<FederalState> beFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "be".equals(federalState.getCountry())).toList();
         final List<FederalState> plFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "pl".equals(federalState.getCountry())).toList();
+        final List<FederalState> ptFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "pt".equals(federalState.getCountry())).toList();
         final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "se".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
-        assertThat(federalStatesTypesByCountry).hasSize(17)
+        assertThat(federalStatesTypesByCountry).hasSize(18)
             .contains(entry("de", deFederalStates))
             .contains(entry("at", atFederalStates))
             .contains(entry("ca", caFederalStates))
@@ -431,6 +549,7 @@ class FederalStateTest {
             .contains(entry("lt", ltFederalStates))
             .contains(entry("be", beFederalStates))
             .contains(entry("pl", plFederalStates))
+            .contains(entry("pt", ptFederalStates))
             .contains(entry("se", seFederalStates))
             .contains(entry("us", usFederalStates));
     }
