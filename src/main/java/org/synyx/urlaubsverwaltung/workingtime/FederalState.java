@@ -15,6 +15,20 @@ public enum FederalState {
 
     NONE("none"),
 
+    CANADA_ONTARIO("ca", "on"),
+    CANADA_YUKON("ca", "yt"),
+    CANADA_QUEBEC("ca", "qc"),
+    CANADA_NOVASCOTIA("ca", "ns"),
+    CANADA_NEWBRUNSWICK("ca", "nb"),
+    CANADA_MANITOBA("ca", "mb"),
+    CANADA_NORTHWESTTERRITORIES("ca", "nt"),
+    CANADA_NUNAVUT("ca", "nu"),
+    CANADA_BRITISHCOLUMBIA("ca", "bc"),
+    CANADA_PRINCEEDWARDISLAND("ca", "pe"),
+    CANADA_SASKATCHEWAN("ca", "sk"),
+    CANADA_ALBERTA("ca", "ab"),
+    CANADA_NEWFOUNDLANDANDLABRADOR("ca", "nl"),
+
     GERMANY_BADEN_WUERTTEMBERG("de", "bw"),
     GERMANY_BAYERN("de", "by"),
     GERMANY_BAYERN_MUENCHEN("de", "by", "mu"),
