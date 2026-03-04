@@ -222,6 +222,8 @@ class FederalStateTest {
 
             Arguments.of(POLAND, "pl", null),
 
+            Arguments.of(SWEDEN, "se", null),
+
             Arguments.of(USA_MARYLAND, "md", null),
             Arguments.of(USA_VIRGINIA, "va", null),
             Arguments.of(USA_WASHINGTON_DC, "dc", null)
@@ -369,6 +371,7 @@ class FederalStateTest {
         final List<FederalState> ltFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "lt".equals(federalState.getCountry())).toList();
         final List<FederalState> beFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "be".equals(federalState.getCountry())).toList();
         final List<FederalState> plFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "pl".equals(federalState.getCountry())).toList();
+        final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "es".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
         assertThat(federalStatesTypesByCountry).hasSize(14)
@@ -385,6 +388,7 @@ class FederalStateTest {
             .contains(entry("lt", ltFederalStates))
             .contains(entry("be", beFederalStates))
             .contains(entry("pl", plFederalStates))
+            .contains(entry("se", seFederalStates))
             .contains(entry("us", usFederalStates));
     }
 }
