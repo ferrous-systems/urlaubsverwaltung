@@ -29,6 +29,8 @@ public enum FederalState {
     CANADA_ALBERTA("ca", "ab"),
     CANADA_NEWFOUNDLANDANDLABRADOR("ca", "nl"),
 
+    COLOMBIA("co", "co"),
+
     GERMANY_BADEN_WUERTTEMBERG("de", "bw"),
     GERMANY_BAYERN("de", "by"),
     GERMANY_BAYERN_MUENCHEN("de", "by", "mu"),

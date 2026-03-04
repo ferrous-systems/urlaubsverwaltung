@@ -35,6 +35,7 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_PRINCE
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_QUEBEC;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_SASKATCHEWAN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CANADA_YUKON;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.COLOMBIA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.CROATIA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.GERMANY_BADEN_WUERTTEMBERG;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.GERMANY_BAYERN;
@@ -400,6 +401,7 @@ class FederalStateTest {
         final List<FederalState> atFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "at".equals(federalState.getCountry())).toList();
         final List<FederalState> caFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "ca".equals(federalState.getCountry())).toList();
         final List<FederalState> chFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "ch".equals(federalState.getCountry())).toList();
+        final List<FederalState> coFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "co".equals(federalState.getCountry())).toList();
         final List<FederalState> ukFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "gb".equals(federalState.getCountry())).toList();
         final List<FederalState> grFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "gr".equals(federalState.getCountry())).toList();
         final List<FederalState> mtFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "mt".equals(federalState.getCountry())).toList();
@@ -413,11 +415,12 @@ class FederalStateTest {
         final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "se".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
-        assertThat(federalStatesTypesByCountry).hasSize(16)
+        assertThat(federalStatesTypesByCountry).hasSize(17)
             .contains(entry("de", deFederalStates))
             .contains(entry("at", atFederalStates))
             .contains(entry("ca", caFederalStates))
             .contains(entry("ch", chFederalStates))
+            .contains(entry("co", coFederalStates))
             .contains(entry("gb", ukFederalStates))
             .contains(entry("gr", grFederalStates))
             .contains(entry("mt", mtFederalStates))
