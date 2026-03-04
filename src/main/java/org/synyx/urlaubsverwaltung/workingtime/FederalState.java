@@ -120,6 +120,8 @@ public enum FederalState {
 
     POLAND("pl", "pl"),
 
+    SWEDEN("se", "se"),
+
     USA_MARYLAND("us", "md"),
     USA_VIRGINIA("us", "va"),
     USA_WASHINGTON_DC("us", "dc");

@@ -71,6 +71,7 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_MELILLA
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_MURCIA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_NAVARRA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SPAIN_VALENCIA;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWEDEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_AARGAU;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_APPENZELL_AUSSERRHODEN;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.SWITZERLAND_APPENZELL_INNERRHODEN;
@@ -222,6 +223,8 @@ class FederalStateTest {
 
             Arguments.of(POLAND, "pl", null),
 
+            Arguments.of(SWEDEN, "se", null),
+
             Arguments.of(USA_MARYLAND, "md", null),
             Arguments.of(USA_VIRGINIA, "va", null),
             Arguments.of(USA_WASHINGTON_DC, "dc", null)
@@ -369,9 +372,10 @@ class FederalStateTest {
         final List<FederalState> ltFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "lt".equals(federalState.getCountry())).toList();
         final List<FederalState> beFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "be".equals(federalState.getCountry())).toList();
         final List<FederalState> plFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "pl".equals(federalState.getCountry())).toList();
+        final List<FederalState> seFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "se".equals(federalState.getCountry())).toList();
         final List<FederalState> usFederalStates = Arrays.stream(FederalState.values()).filter(federalState -> "us".equals(federalState.getCountry())).toList();
 
-        assertThat(federalStatesTypesByCountry).hasSize(14)
+        assertThat(federalStatesTypesByCountry).hasSize(15)
             .contains(entry("de", deFederalStates))
             .contains(entry("at", atFederalStates))
             .contains(entry("ch", chFederalStates))
@@ -385,6 +389,7 @@ class FederalStateTest {
             .contains(entry("lt", ltFederalStates))
             .contains(entry("be", beFederalStates))
             .contains(entry("pl", plFederalStates))
+            .contains(entry("se", seFederalStates))
             .contains(entry("us", usFederalStates));
     }
 }

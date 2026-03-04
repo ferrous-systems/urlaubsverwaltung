@@ -110,6 +110,8 @@ public enum FederalStateDTO {
 
     POLAND,
 
+    SWEDEN,
+
     USA_MARYLAND,
     USA_VIRGINIA,
     USA_WASHINGTON_DC;
