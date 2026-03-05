@@ -77,7 +77,7 @@ import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CAST
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_VILADEREI;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_CASTELOBRANCO_VILAVELHADERODAO;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_ALENQUER;
-import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_AMADOR;
+import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_AMADORA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_ARRUDADOSVINHOS;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_AZAMBUJA;
 import static org.synyx.urlaubsverwaltung.workingtime.FederalState.PORTUGAL_LISSABON_CASCAIS;
@@ -228,7 +228,7 @@ class FederalStateTest {
             Arguments.of(PORTUGAL_CASTELOBRANCO_VILADEREI, "05", "VLR"),
             Arguments.of(PORTUGAL_CASTELOBRANCO_VILAVELHADERODAO, "05", "VVR"),
             Arguments.of(PORTUGAL_LISSABON_ALENQUER, "11", "ALQ"),
-            Arguments.of(PORTUGAL_LISSABON_AMADOR, "11", "AMD"),
+            Arguments.of(PORTUGAL_LISSABON_AMADORA, "11", "AMD"),
             Arguments.of(PORTUGAL_LISSABON_ARRUDADOSVINHOS, "11", "ARV"),
             Arguments.of(PORTUGAL_LISSABON_AZAMBUJA, "11", "AZB"),
             Arguments.of(PORTUGAL_LISSABON_CASCAIS, "11", "CSC"),
@@ -413,7 +413,7 @@ class FederalStateTest {
             Arguments.of(PORTUGAL_CASTELOBRANCO_VILADEREI, "pt"),
             Arguments.of(PORTUGAL_CASTELOBRANCO_VILAVELHADERODAO, "pt"),
             Arguments.of(PORTUGAL_LISSABON_ALENQUER, "pt"),
-            Arguments.of(PORTUGAL_LISSABON_AMADOR, "pt"),
+            Arguments.of(PORTUGAL_LISSABON_AMADORA, "pt"),
             Arguments.of(PORTUGAL_LISSABON_ARRUDADOSVINHOS, "pt"),
             Arguments.of(PORTUGAL_LISSABON_AZAMBUJA, "pt"),
             Arguments.of(PORTUGAL_LISSABON_CASCAIS, "pt"),
